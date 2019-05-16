@@ -3,12 +3,18 @@
     <head>
         <title>{{title}}</title>
     </head>
-    <h3>
-        <a href="/blog">Main Blog Page</a>
-        <a href="/newpost">Add a New Post</a>
-    </h3>
-<body>
+    <nav>
+        <ul>
+        <a href="/">Home</a> &emsp;
+        <a href="/blog">All Posts</a> &emsp;
+        <a href="/newpost">New Post</a>
 
+        <a href="/login" style = "padding-left: 150px;">Login</a>&emsp;
+        <a href="/logout">Logout</a>&emsp;
+        <a href="/signup">Sign Up</a>
+        </ul>
+    </nav>
+<body>
     {% block content %}
     {% endblock %}
 

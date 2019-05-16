@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Blogz</h1>
+    <h2>Sign up</h2>
+
+    <form method='post'>
+    <body>
+            <label for="name">                                                                                      
+            Username: <input type="text"  name="name" value={{name}}> {{name_too}} {{name_not}} {{name_np}}                                                                                 
+            </label>
+            <br>
+            <label for="password">                                                                                      
+            Password: <input type="password"  name="password" value={{password}}>{{no_match}} {{pass_too}} {{pass_not}} {{pass_np}}                                                                             
+            </label>
+            <br>
+            <label for="verify">                                                                                      
+            Verify Password: <input type="password"  name="verify" value={{verify}}>{{no_match}}                                                                      
+            </label>
+            <br> 
+            <label for="email">                                                                                      
+            Email (optional): <input type="text"  name="email" value={{email}}>{{inv_email}}                                                                                     
+            </label>
+            <br>                                                                                                                                                                                                                                                     
+            <input type="submit" value="Sign Up!"/>                                                                        
+        </form>   
+    </body>
+{% endblock %}
